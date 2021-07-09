@@ -56,7 +56,7 @@ class RouteTest {
     @Test
     fun `post route should return 200 with weather information`() {
         val apiKey = System.getenv("OPENWEATHER_API_KEY")
-        val cityId = "6619279"
+        val cityId = "5174095"
         val url = "/weather?id=$cityId&APPID=$apiKey"
 
         stubResponse(url, openWeatherApiResponse!!)

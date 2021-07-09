@@ -9,6 +9,7 @@ import org.springframework.web.reactive.function.server.body
 import org.springframework.web.util.UriBuilder
 import reactor.core.publisher.Mono
 
+
 @Component
 @Suppress("unused")
 class OpenWeatherImpl(private val client: WebClient, private val config: OpenWeatherConfig): WeatherService {
@@ -34,4 +35,6 @@ class OpenWeatherImpl(private val client: WebClient, private val config: OpenWea
             .ok()
             .body(response)
     }
+
+
 }
